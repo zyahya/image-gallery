@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "pnpm exec  prettier . --write && pnpm exec tailwindcss -i ./input.css -o ./output.css",
+    "watch": "pnpm exec  prettier . --write && pnpm exec tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.5"
+  }
+}
